@@ -25,7 +25,7 @@ def sum_series(n, val1=0, val2=1):
     elif n == 1:
         return val2
     else:
-        return (sum_series(n-1, val1, val2) + sum_series(n-2, val1, val2))
+        return sum_series(n-1, val1, val2) + sum_series(n-2, val1, val2)
 
 
 if __name__ == "__main__":
